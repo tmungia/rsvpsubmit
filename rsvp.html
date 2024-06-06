@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP</title>
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./schedule.html">Schedule</a></li>
+          <li><a href="./travel.html">Travel</a></li>
+          <li><a href="./rsvp.html">RSVP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="rsvp">
+      <h1 id="titlename">Sanad & Thuwaiba</h1>
+      <h2>Dar Es Salaam, Tanzania</h2>
+      <h3>02-03 August 2024</h3>
+      <h4 class="rsvp-important">Please enter your name to RSVP</h4>
+      <form
+        action="https://formsubmit.co/thuwaiba_mungia@hotmail.co.uk"
+        method="POST"
+      >
+        <!--honeypot-->
+        <input type="text" name="_honey" style="display: none" />
+
+        <!--Disable Captcha-->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <h5>
+          First Name:
+          <input
+            name="First&nbsp;Name"
+            class="enterbox"
+            type="text"
+            placeholder=""
+            required
+          />
+        </h5>
+        <h5>
+          Last Name:
+          <input
+            name="Last&nbsp;Name"
+            class="enterbox"
+            type="text"
+            placeholder=""
+            required
+          />
+        </h5>
+        <h6>
+          Will you be attending?
+          <label for="yesOption">Yes</label>
+          <input
+            type="radio"
+            value="Yes"
+            id="yesOption"
+            name="confirmation"
+            required
+          />
+          <label for="noOption">No</label>
+          <input
+            type="radio"
+            value="No"
+            id="noOption"
+            name="confirmation"
+            required
+          />
+        </h6>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
